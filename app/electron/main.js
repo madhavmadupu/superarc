@@ -37,8 +37,8 @@ const gNet = require("net");
 const remote = require("@electron/remote/main");
 
 process.noAsar = true;
-const appDir = path.dirname(app.getAppPath());
-const isDevEnv = process.env.NODE_ENV === "development";
+const appDir = path.resolve(__dirname, "..", "..");
+const isDevEnv = true;
 const appVer = app.getVersion();
 const confDir = path.join(app.getPath("home"), ".config", "siyuan");
 const windowStatePath = path.join(confDir, "windowState.json");
@@ -293,7 +293,7 @@ const sleep = (ms) => {
 const showErrorWindow = (titleZh, titleEn, content, emoji = "⚠️") => {
     let errorHTMLPath = path.join(appDir, "app", "electron", "error.html");
     if (isDevEnv) {
-        errorHTMLPath = path.join(appDir, "electron", "error.html");
+        errorHTMLPath = path.join(appDir, "app", "electron", "error.html");
     }
     const errWindow = new BrowserWindow({
         width: Math.floor(screen.getPrimaryDisplay().size.width * 0.5),
@@ -560,7 +560,7 @@ const initKernel = (workspace, port, lang) => {
         });
         let bootIndex = path.join(appDir, "app", "electron", "boot.html");
         if (isDevEnv) {
-            bootIndex = path.join(appDir, "electron", "boot.html");
+            bootIndex = path.join(appDir, "app", "electron", "boot.html");
         }
         bootWindow.loadFile(bootIndex, {query: {v: appVer}});
         if (openAsHidden) {
@@ -1324,7 +1324,7 @@ app.whenReady().then(() => {
         });
         let initHTMLPath = path.join(appDir, "app", "electron", "init.html");
         if (isDevEnv) {
-            initHTMLPath = path.join(appDir, "electron", "init.html");
+            initHTMLPath = path.join(appDir, "app", "electron", "init.html");
         }
 
         // 改进桌面端初始化时使用的外观语言 https://github.com/siyuan-note/siyuan/issues/6803

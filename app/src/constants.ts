@@ -313,15 +313,15 @@ export abstract class Constants {
         fr_FR: "20210808180117-6v0mkxr",
         he_IL: "20210808180117-6v0mkxr",
         it_IT: "20210808180117-6v0mkxr",
-        ja_JP: "20240530133126-axarxgx",
+        ja_JP: "20210808180117-6v0mkxr",
         ko_KR: "20210808180117-6v0mkxr",
         pl_PL: "20210808180117-6v0mkxr",
         pt_BR: "20210808180117-6v0mkxr",
         ru_RU: "20210808180117-6v0mkxr",
         sk_SK: "20210808180117-6v0mkxr",
         tr_TR: "20210808180117-6v0mkxr",
-        zh_CHT: "20211226090932-5lcq56f",
-        zh_CN: "20210808180117-czj9bvb",
+        zh_CHT: "20210808180117-6v0mkxr",
+        zh_CN: "20210808180117-6v0mkxr",
     };
     public static readonly QUICK_DECK_ID = "20230218211946-2kw8jgx";
 

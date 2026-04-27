@@ -1,210 +1,210 @@
 <p align="center">
 <img alt="SiYuan" src="https://b3log.org/images/brand/siyuan-128.png">
 <br>
-<em>Düşünceni Yeniden Şekillendir</em>
+<em>Refactor your thinking</em>
 <br><br>
-<a title="Derleme Durumu" target="_blank" href="https://github.com/siyuan-note/siyuan/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/siyuan-note/siyuan/cd.yml?style=flat-square"></a>
-<a title="Sürümler" target="_blank" href="https://github.com/siyuan-note/siyuan/releases"><img src="https://img.shields.io/github/release/siyuan-note/siyuan.svg?style=flat-square&color=9CF"></a>
-<a title="İndirme Sayısı" target="_blank" href="https://github.com/siyuan-note/siyuan/releases"><img src="https://img.shields.io/github/downloads/siyuan-note/siyuan/total.svg?style=flat-square&color=blueviolet"></a>
+<a title="Build Status" target="_blank" href="https://github.com/siyuan-note/siyuan/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/siyuan-note/siyuan/cd.yml?style=flat-square"></a>
+<a title="Releases" target="_blank" href="https://github.com/siyuan-note/siyuan/releases"><img src="https://img.shields.io/github/release/siyuan-note/siyuan.svg?style=flat-square&color=9CF"></a>
+<a title="Downloads" target="_blank" href="https://github.com/siyuan-note/siyuan/releases"><img src="https://img.shields.io/github/downloads/siyuan-note/siyuan/total.svg?style=flat-square&color=blueviolet"></a>
 <br>
-<a title="Docker Çekimleri" target="_blank" href="https://hub.docker.com/r/b3log/siyuan"><img src="https://img.shields.io/docker/pulls/b3log/siyuan.svg?style=flat-square&color=green"></a>
-<a title="Docker Görüntü Boyutu" target="_blank" href="https://hub.docker.com/r/b3log/siyuan"><img src="https://img.shields.io/docker/image-size/b3log/siyuan.svg?style=flat-square&color=ff96b4"></a>
-<a title="Görüntülenme Sayısı" target="_blank" href="https://github.com/siyuan-note/siyuan"><img src="https://hits.b3log.org/siyuan-note/siyuan.svg"></a>
+<a title="Docker Pulls" target="_blank" href="https://hub.docker.com/r/b3log/siyuan"><img src="https://img.shields.io/docker/pulls/b3log/siyuan.svg?style=flat-square&color=green"></a>
+<a title="Docker Image Size" target="_blank" href="https://hub.docker.com/r/b3log/siyuan"><img src="https://img.shields.io/docker/image-size/b3log/siyuan.svg?style=flat-square&color=ff96b4"></a>
+<a title="Hits" target="_blank" href="https://github.com/siyuan-note/siyuan"><img src="https://hits.b3log.org/siyuan-note/siyuan.svg"></a>
 <br>
 <a title="AGPLv3" target="_blank" href="https://www.gnu.org/licenses/agpl-3.0.txt"><img src="http://img.shields.io/badge/license-AGPLv3-orange.svg?style=flat-square"></a>
-<a title="Kod Boyutu" target="_blank" href="https://github.com/siyuan-note/siyuan"><img src="https://img.shields.io/github/languages/code-size/siyuan-note/siyuan.svg?style=flat-square&color=yellow"></a>
-<a title="GitHub Pull İstekleri" target="_blank" href="https://github.com/siyuan-note/siyuan/pulls"><img src="https://img.shields.io/github/issues-pr-closed/siyuan-note/siyuan.svg?style=flat-square&color=FF9966"></a>
+<a title="Code Size" target="_blank" href="https://github.com/siyuan-note/siyuan"><img src="https://img.shields.io/github/languages/code-size/siyuan-note/siyuan.svg?style=flat-square&color=yellow"></a>
+<a title="GitHub Pull Requests" target="_blank" href="https://github.com/siyuan-note/siyuan/pulls"><img src="https://img.shields.io/github/issues-pr-closed/siyuan-note/siyuan.svg?style=flat-square&color=FF9966"></a>
 <br>
-<a title="GitHub Commit'leri" target="_blank" href="https://github.com/siyuan-note/siyuan/commits/master"><img src="https://img.shields.io/github/commit-activity/m/siyuan-note/siyuan.svg?style=flat-square"></a>
-<a title="Son Commit" target="_blank" href="https://github.com/siyuan-note/siyuan/commits/master"><img src="https://img.shields.io/github/last-commit/siyuan-note/siyuan.svg?style=flat-square&color=FF9900"></a>
+<a title="GitHub Commits" target="_blank" href="https://github.com/siyuan-note/siyuan/commits/master"><img src="https://img.shields.io/github/commit-activity/m/siyuan-note/siyuan.svg?style=flat-square"></a>
+<a title="Last Commit" target="_blank" href="https://github.com/siyuan-note/siyuan/commits/master"><img src="https://img.shields.io/github/last-commit/siyuan-note/siyuan.svg?style=flat-square&color=FF9900"></a>
 <br><br>
-<a title="Twitter" target="_blank" href="https://twitter.com/b3logos"><img alt="Twitter Takip" src="https://img.shields.io/twitter/follow/b3logos?label=Takip%20Et&style=social"></a>
-<a title="Discord" target="_blank" href="https://discord.gg/dmMbCqVX7G"><img alt="Discord'da Sohbet Et" src="https://img.shields.io/discord/808152298789666826?label=Discord&logo=Discord&style=social"></a>
+<a title="Twitter" target="_blank" href="https://twitter.com/b3logos"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/b3logos?label=Follow&style=social"></a>
+<a title="Discord" target="_blank" href="https://discord.gg/dmMbCqVX7G"><img alt="Chat on Discord" src="https://img.shields.io/discord/808152298789666826?label=Discord&logo=Discord&style=social"></a>
 <br><br>
 <a href="https://trendshift.io/repositories/3949" target="_blank"><img src="https://trendshift.io/api/badge/repositories/3949" alt="siyuan-note%2Fsiyuan | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </p>
 
 <p align="center">
-<a href="README.md">English</a>
+<b>English</b>
 | <a href="README_zh_CN.md">中文</a>
 | <a href="README_ja_JP.md">日本語</a>
-| <b>Türkçe</b>
+| <a href="README_tr_TR.md">Türkçe</a>
 </p>
 
 ---
 
-## İçindekiler
+## Table of Contents
 
-* [💡 Giriş](#-giriş)
-* [🔮 Özellikler](#-özellikler)
-* [🏗️ Mimari ve Ekosistem](#-mimari-ve-ekosistem)
-* [🌟 Yıldız Geçmişi](#-yıldız-geçmişi)
-* [🗺️ Yol Haritası](#️-yol-haritası)
-* [🚀 İndirme ve Kurulum](#-indirme-ve-kurulum)
-  * [Uygulama Mağazası](#uygulama-mağazası)
-  * [Kurulum Paketi](#kurulum-paketi)
-  * [Paket Yöneticisi](#paket-yöneticisi)
-  * [Docker Barındırma](#docker-barındırma)
-  * [Unraid Barındırma](#unraid-barındırma)
-  * [TrueNAS Barındırma](#truenas-barındırma)
-  * [Erken Önizleme (Insider Preview)](#erken-önizleme-insider-preview)
-* [🏘️ Topluluk](#️-topluluk)
-* [🛠️ Geliştirme Rehberi](#️-geliştirme-rehberi)
-* [❓ SSS (Sıkça Sorulan Sorular)](#-sss-sıkça-sorulan-sorular)
-  * [SiYuan verileri nasıl saklar?](#siyuan-verileri-nasıl-saklar)
-  * [Üçüncü taraf senkronizasyon diskiyle veri senkronizasyonu destekleniyor mu?](#üçüncü-taraf-senkronizasyon-diskiyle-veri-senkronizasyonu-destekleniyor-mu)
-  * [SiYuan açık kaynak mı?](#siyuan-açık-kaynak-mı)
-  * [Yeni bir sürüme nasıl yükseltilir?](#yeni-bir-sürüme-nasıl-yükseltilir)
-  * [Bazı bloklar (örneğin liste öğelerindeki paragraflar) blok simgesini bulamıyorsa ne yapmalıyım?](#bazı-bloklar-örneğin-liste-öğelerindeki-paragraflar-blok-simgesini-bulamıyorsa-ne-yapmalıyım)
-  * [Veri deposu anahtarı (data repo key) kaybolursa ne yapmalıyım?](#veri-deposu-anahtarı-data-repo-key-kaybolursa-ne-yapmalıyım)
-  * [Ücretli mi?](#ücretli-mi)
-* [🙏 Teşekkür](#-teşekkür)
-  * [Katkıda Bulunanlar](#katkıda-bulunanlar)
+* [💡 Introduction](#-introduction)
+* [🔮 Features](#-features)
+* [🏗️ Architecture and Ecosystem](#-architecture-and-ecosystem)
+* [🌟 Star History](#-star-history)
+* [🗺️ Roadmap](#️-roadmap)
+* [🚀 Download Setup](#-download-setup)
+  * [App Market](#app-market)
+  * [Installation Package](#installation-package)
+  * [Package Manager](#package-manager)
+  * [Docker Hosting](#docker-hosting)
+  * [Unraid Hosting](#unraid-hosting)
+  * [TrueNAS Hosting](#TrueNAS-hosting)
+  * [Insider Preview](#insider-preview)
+* [🏘️ Community](#️-community)
+* [🛠️ Development Guide](#️-development-guide)
+* [❓ FAQ](#-faq)
+  * [How does SiYuan store data?](#how-does-siyuan-store-data)
+  * [Does it support data synchronization through a third-party sync disk?](#does-it-support-data-synchronization-through-a-third-party-sync-disk)
+  * [Is SiYuan open source?](#is-siyuan-open-source)
+  * [How to upgrade to a new version?](#how-to-upgrade-to-a-new-version)
+  * [What if some blocks (such as paragraph blocks in list items) cannot find the block icon?](#what-if-some-blocks-such-as-paragraph-blocks-in-list-items-cannot-find-the-block-icon)
+  * [What should I do if the data repo key is lost?](#what-should-i-do-if-the-data-repo-key-is-lost)
+  * [Do I need to pay for it?](#do-i-need-to-pay-for-it)
+* [🙏 Acknowledgement](#-acknowledgement)
+  * [Contributors](#contributors)
 
 ---
 
-## 💡 Giriş
+## 💡 Introduction
 
-SiYuan, gizliliği ön planda tutan kişisel bir bilgi yönetim sistemidir.  
-Blok düzeyinde referansları ve Markdown WYSIWYG düzenlemeyi destekler.
+SiYuan is a privacy-first personal knowledge management system, support fine-grained block-level reference and Markdown
+WYSIWYG.
 
-Daha fazla bilgi için [SiYuan İngilizce Tartışma Forumu](https://liuyun.io)’na katılabilirsin.
+Welcome to [SiYuan English Discussion Forum](https://liuyun.io) to learn more.
 
 ![feature0.png](https://b3logfile.com/file/2025/11/feature0-GfbhEqf.png)
 
 ![feature51.png](https://b3logfile.com/file/2025/11/feature5-1-7DJSfEP.png)
 
-## 🔮 Özellikler
+## 🔮 Features
 
-Çoğu özellik tamamen ücretsizdir ve ticari kullanım için de geçerlidir.
+Most features are free, even for commercial use.
 
-* İçerik Bloğu
-  * Blok düzeyinde referans ve çift yönlü bağlantılar
-  * Özel nitelikler
-  * Gömülü SQL sorgusu
-  * `siyuan://` protokolü
-* Editör
-  * Blok tabanlı yapı
-  * Markdown WYSIWYG düzenleme
-  * Liste taslağı görünümü
-  * Blok yakınlaştırma (zoom-in)
-  * Milyon kelimelik büyük belge düzenleme
-  * Matematiksel formüller, grafikler, akış diyagramları, Gantt diyagramları, zaman diyagramları, notalar vb.
-  * Web kırpma (web clipping)
-  * PDF açıklama bağlantısı
-* Dışa Aktarım
-  * Blok referansı ve gömme desteği
-  * Varlıklarıyla birlikte standart Markdown çıktısı
-  * PDF, Word ve HTML olarak dışa aktarma
-  * WeChat MP, Zhihu ve Yuque’a kopyalama
-* Veritabanı
-  * Tablo görünümü
-* Aralıklı Tekrar (Flashcard)
-* OpenAI API ile yapay zekâ yazma ve Soru-Cevap sohbeti
-* Tesseract OCR
-* Çok sekmeli görünüm, sürükle-bırak ile ekran bölme
-* Şablon parçacıkları
-* JavaScript/CSS kod parçacıkları
-* Android / iOS / HarmonyOS uygulamaları
-* Docker dağıtımı
+* Content block
+  * Block-level reference and two-way links
+  * Custom attributes
+  * SQL query embed
+  * Protocol `siyuan://`
+* Editor
+  * Block-style
+  * Markdown WYSIWYG
+  * List outline
+  * Block zoom-in
+  * Million-word large document editing
+  * Mathematical formulas, charts, flowcharts, Gantt charts, timing charts, staffs, etc.
+  * Web clipping
+  * PDF Annotation link
+* Export
+  * Block ref and embed
+  * Standard Markdown with assets
+  * PDF, Word and HTML
+  * Copy to WeChat MP, Zhihu and Yuque
+* Database
+  * Table view
+* Flashcard spaced repetition
+* AI writing and Q/A chat via OpenAI API
+* Tesseract OCR 
+* Multi-tab, drag and drop to split screen
+* Template snippet
+* JavaScript/CSS snippet
+* Android/iOS/HarmonyOS App
+* Docker deployment
 * [API](https://github.com/siyuan-note/siyuan/blob/master/API.md)
-* Topluluk pazaryeri
+* Community marketplace
 
-Bazı özellikler yalnızca ücretli üyeler için geçerlidir. Detaylar için [Fiyatlandırma](https://b3log.org/siyuan/en/pricing.html) sayfasına göz atabilirsin.
+Some features are only available to paid members, for more details please refer to [Pricing](https://b3log.org/siyuan/en/pricing.html).
 
-## 🏗️ Mimari ve Ekosistem
+## 🏗️ Architecture and Ecosystem
 
 ![SiYuan Arch](https://b3logfile.com/file/2023/05/SiYuan_Arch-Sgu8vXT.png "SiYuan Arch")
 
-| Proje                                                    | Açıklama              | Çatallama (Forks)                                                              | Yıldız (Stars)                                                                     |
-|----------------------------------------------------------|-----------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [lute](https://github.com/88250/lute)                    | Editör motoru         | ![GitHub forks](https://img.shields.io/github/forks/88250/lute)                | ![GitHub Repo stars](https://img.shields.io/github/stars/88250/lute)               |
-| [chrome](https://github.com/siyuan-note/siyuan-chrome)   | Chrome/Edge eklentisi | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-chrome) | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-chrome) |
-| [bazaar](https://github.com/siyuan-note/bazaar)          | Topluluk pazaryeri    | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/bazaar)        | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/bazaar)       |
-| [dejavu](https://github.com/siyuan-note/dejavu)          | Veri deposu (repo)    | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/dejavu)        | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/dejavu)       |
-| [petal](https://github.com/siyuan-note/petal)            | Eklenti API’si        | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/petal)         | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/petal)        |
-| [android](https://github.com/siyuan-note/siyuan-android) | Android uygulaması    | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-android)| ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-android)|
-| [ios](https://github.com/siyuan-note/siyuan-ios)         | iOS uygulaması        | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-ios)    | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-ios)   |
-| [harmony](https://github.com/siyuan-note/siyuan-harmony) | HarmonyOS uygulaması  | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-harmony)| ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-harmony)|
-| [riff](https://github.com/siyuan-note/riff)              | Aralıklı tekrar motoru| ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/riff)          | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/riff)         |
+| Project                                                  | Description           | Forks                                                                           | Stars                                                                                | 
+|----------------------------------------------------------|-----------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [lute](https://github.com/88250/lute)                    | Editor engine         | ![GitHub forks](https://img.shields.io/github/forks/88250/lute)                 | ![GitHub Repo stars](https://img.shields.io/github/stars/88250/lute)                 |
+| [chrome](https://github.com/siyuan-note/siyuan-chrome)   | Chrome/Edge extension | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-chrome)  | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-chrome)  |
+| [bazaar](https://github.com/siyuan-note/bazaar)          | Community marketplace | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/bazaar)         | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/bazaar)         |
+| [dejavu](https://github.com/siyuan-note/dejavu)          | Data repo             | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/dejavu)         | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/dejavu)         |
+| [petal](https://github.com/siyuan-note/petal)            | Plugin API            | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/petal)          | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/petal)          |
+| [android](https://github.com/siyuan-note/siyuan-android) | Android App           | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-android) | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-android) |
+| [ios](https://github.com/siyuan-note/siyuan-ios)         | iOS App               | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-ios)     | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-ios)     |
+| [harmony](https://github.com/siyuan-note/siyuan-harmony) | HarmonyOS App         | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/siyuan-harmony) | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/siyuan-harmony) |
+| [riff](https://github.com/siyuan-note/riff)              | Spaced repetition     | ![GitHub forks](https://img.shields.io/github/forks/siyuan-note/riff)           | ![GitHub Repo stars](https://img.shields.io/github/stars/siyuan-note/riff)           |
 
-## 🌟 Yıldız Geçmişi
+## 🌟 Star History
 
 <a href="https://star-history.com/#siyuan-note/siyuan&Date">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=siyuan-note/siyuan&type=Date&theme=dark" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=siyuan-note/siyuan&type=Date" />
-   <img alt="Yıldız Geçmişi Grafiği" src="https://api.star-history.com/svg?repos=siyuan-note/siyuan&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=siyuan-note/siyuan&type=Date" />
  </picture>
 </a>
 
-## 🗺️ Yol Haritası
+## 🗺️ Roadmap
 
-* [SiYuan geliştirme planı ve ilerleme durumu](https://github.com/orgs/siyuan-note/projects/1)
-* [SiYuan değişiklik günlüğü](CHANGELOG.md)
+* [SiYuan development plan and progress](https://github.com/orgs/siyuan-note/projects/1)
+* [SiYuan changelog](CHANGELOG.md)
 
-## 🚀 İndirme ve Kurulum
+## 🚀 Download Setup
 
-Masaüstü ve mobil cihazlarda uygulama mağazası üzerinden kurulumu tercih etmen önerilir. Böylece gelecekte tek tıkla sürüm yükseltmesi yapabilirsin.
+It is recommended to give priority to installing through the application market on the desktop and mobile, so that you can upgrade the version with one click in the future.
 
-### Uygulama Mağazası
+### App Market
 
-Mobil:
+Mobile:
 
 * [App Store](https://apps.apple.com/us/app/siyuan/id1583226508)
 * [Google Play](https://play.google.com/store/apps/details?id=org.b3log.siyuan)
 * [F-Droid](https://f-droid.org/packages/org.b3log.siyuan)
 
-Masaüstü:
+Desktop:
 
 * [Microsoft Store](https://apps.microsoft.com/detail/9p7hpmxp73k4)
 
-### Kurulum Paketi
+### Installation Package
 
 * [B3log](https://b3log.org/siyuan/en/download.html)
 * [GitHub](https://github.com/siyuan-note/siyuan/releases)
 
-### Paket Yöneticisi
+### Package Manager
 
 #### `siyuan`
 
-[![Paketleme durumu](https://repology.org/badge/vertical-allrepos/siyuan.svg)](https://repology.org/project/siyuan/versions)
+[![Packaging status](https://repology.org/badge/vertical-allrepos/siyuan.svg)](https://repology.org/project/siyuan/versions)
 
 #### `siyuan-note`
 
-[![Paketleme durumu](https://repology.org/badge/vertical-allrepos/siyuan-note.svg)](https://repology.org/project/siyuan-note/versions)
+[![Packaging status](https://repology.org/badge/vertical-allrepos/siyuan-note.svg)](https://repology.org/project/siyuan-note/versions)
 
-### Docker Barındırma
+### Docker Hosting
 
 <details>
-<summary>Docker Dağıtımı</summary>
+<summary>Docker Deployment</summary>
 
-#### Genel Bakış
+#### Overview
 
-SiYuan’ı bir sunucuda çalıştırmanın en kolay yolu Docker üzerinden dağıtmaktır.
+The easiest way to serve SiYuan on a server is to deploy it through Docker.
 
-* Görüntü adı: `b3log/siyuan`
-* [Docker Görüntüsü](https://hub.docker.com/r/b3log/siyuan)
+* Image name `b3log/siyuan`
+* [Image URL](https://hub.docker.com/r/b3log/siyuan)
 
-#### Dosya Yapısı
+#### File structure
 
-Tüm program `/opt/siyuan/` dizini altındadır. Bu dizin, Electron kurulum paketinin `resources` klasör yapısına karşılık gelir:
+The overall program is located under `/opt/siyuan/`, which is basically the structure under the resources folder of the Electron installation package:
 
-* **appearance**: simgeler, temalar, diller  
-* **guide**: kullanıcı kılavuzu belgeleri  
-* **stage**: arayüz ve statik kaynaklar  
-* **kernel**: çekirdek program
+* appearance: icon, theme, languages
+* guide: user guide document
+* stage: interface and static resources
+* kernel: kernel program
 
-#### Giriş Noktası (Entrypoint)
+#### Entrypoint
 
-Docker görüntüsü oluşturulurken giriş noktası şu şekilde ayarlanır: `ENTRYPOINT ["/opt/siyuan/entrypoint.sh"]` Bu betik (script), konteyner içinde çalışacak kullanıcının `PUID` (Kullanıcı ID) ve `PGID` (Grup ID) değerlerini değiştirmene olanak tanır. Bu, özellikle host dizinleri bağlarken oluşabilecek izin sorunlarını çözmek için önemlidir.
+The entry point is set when building the Docker image: `ENTRYPOINT ["/opt/siyuan/entrypoint.sh"]`. This script allows changing the `PUID` and `PGID` of the user that will run inside the container. This is especially relevant to solve permission issues when mounting directories from the host. The `PUID` (User ID) and `PGID` (Group ID) can be passed as environment variables, making it easier to ensure correct permissions when accessing host-mounted directories.
 
-`docker run b3log/siyuan` komutunu çalıştırırken aşağıdaki parametreleri kullanabilirsin:
+Use the following parameters when running the container with `docker run b3log/siyuan`:
 
-* `--workspace`: çalışma alanı klasör yolunu belirtir, host üzerinde `-v` parametresiyle bağlanır  
-* `--accessAuthCode`: erişim yetkilendirme kodunu belirtir  
+* `--workspace`: Specifies the workspace folder path, mounted to the container via `-v` on the host
+* `--accessAuthCode`: Specifies the access authorization code
 
-Tüm parametreleri görmek için `--help` komutunu kullanabilirsin. Yeni ortam değişkenleriyle bir örnek başlatma komutu aşağıdadır:
+More parameters can be found using `--help`. Here’s an example of a startup command with the new environment variables:
 
 ```bash
 docker run -d \
@@ -216,16 +216,16 @@ docker run -d \
   --accessAuthCode=xxx
 ```
 
-* `PUID`: Özel kullanıcı kimliği (isteğe bağlı, belirtilmezse varsayılan değer `1000` olarak kullanılır)  
-* `PGID`: Özel grup kimliği (isteğe bağlı, belirtilmezse varsayılan değer `1000` olarak kullanılır)  
-* `workspace_dir_host`: Ana makinedeki (host) çalışma alanı klasör yolu  
-* `workspace_dir_container`: Konteyner içindeki çalışma alanı klasör yolu (`--workspace` parametresiyle belirtilir)  
-  * Alternatif olarak, bu yol `SIYUAN_WORKSPACE_PATH` ortam değişkeniyle de ayarlanabilir. Eğer her iki yöntem de kullanılırsa, **komut satırı önceliklidir**.  
-* `accessAuthCode`: Erişim yetkilendirme kodu (**kesinlikle değiştir**, aksi halde herkes verilerine erişebilir)  
-  * Alternatif olarak, yetkilendirme kodu `SIYUAN_ACCESS_AUTH_CODE` ortam değişkeniyle de ayarlanabilir. Yine, hem komut satırı hem ortam değişkeni kullanılırsa, **komut satırı önceliklidir**.  
-  * Erişim yetkilendirme kodunu devre dışı bırakmak için şu ortam değişkenini ayarla: `SIYUAN_ACCESS_AUTH_CODE_BYPASS=true`  
+* `PUID`: Custom user ID (optional, defaults to `1000` if not provided)
+* `PGID`: Custom group ID (optional, defaults to `1000` if not provided)
+* `workspace_dir_host`: The workspace folder path on the host
+* `workspace_dir_container`: The path of the workspace folder in the container, as specified in `--workspace`
+  * In alternative, it's possible to set the path via the `SIYUAN_WORKSPACE_PATH` env variable. The commandline will always have the priority, if both are set
+* `accessAuthCode`: Access authorization code (please **be sure to modify**, otherwise anyone can access your data)
+  * In alternative, it's possible to set the auth code via the `SIYUAN_ACCESS_AUTH_CODE` env variable. The commandline will always have the priority, if both are set
+  * To disable the Access authorization code set the env variable `SIYUAN_ACCESS_AUTH_CODE_BYPASS=true`
 
-Kurulumu basitleştirmek için, host ve konteyner üzerindeki çalışma alanı yollarını aynı şekilde ayarlaman önerilir. Örneğin her ikisini de `/siyuan/workspace` olarak tanımlayabilirsin. Buna karşılık gelen başlatma komutu şu şekildedir:
+To simplify things, it is recommended to configure the workspace folder path to be consistent on the host and container, such as having both `workspace_dir_host` and `workspace_dir_container` configured as `/siyuan/workspace`. The corresponding startup command would be:
 
 ```bash
 docker run -d \
@@ -239,7 +239,7 @@ docker run -d \
 
 #### Docker Compose
 
-SiYuan’ı Docker Compose ile çalıştıran kullanıcılar için, `PUID` ve `PGID` ortam değişkenleri kullanılarak kullanıcı ve grup kimlikleri özelleştirilebilir. Aşağıda örnek bir Docker Compose yapılandırması bulunmaktadır:
+For users running Siyuan with Docker Compose, the environment variables `PUID` and `PGID` can be passed to customize the user and group IDs. Here's an example of a Docker Compose configuration:
 
 ```yaml
 version: "3.9"
@@ -259,51 +259,51 @@ services:
       - PGID=${YOUR_USER_PGID}  # Customize group ID
 ```
 
-Bu yapılandırmada:
+In this setup:
 
-* `PUID` ve `PGID` dinamik olarak ayarlanır ve konteynere aktarılır.  
-* Eğer bu değişkenler belirtilmezse, varsayılan değer olarak `1000` kullanılır.  
+* `PUID` and `PGID` are set dynamically and passed to the container
+* If these variables are not provided, the default `1000` will be used
 
-`PUID` ve `PGID` değişkenlerini ortamda (environment) belirterek, `docker-compose.yml` dosyasında `user: '1000:1000'` satırını açıkça yazmana gerek kalmaz. Konteyner, başlatma sırasında bu ortam değişkenlerine göre kullanıcı ve grup ayarlarını otomatik olarak düzenler.
+By specifying `PUID` and `PGID` in the environment, you avoid the need to explicitly set the `user` directive (`user: '1000:1000'`) in the compose file. The container will dynamically adjust the user and group based on these environment variables at startup.
 
-#### Kullanıcı İzinleri
+#### User Permissions
 
-Docker görüntüsünde yer alan `entrypoint.sh` betiği, belirtilen `PUID` ve `PGID` değerleriyle birlikte `siyuan` adlı kullanıcı ve grubun oluşturulmasını sağlar. Bu nedenle, ana makine (host) üzerinde çalışma alanı klasörü oluştururken, bu klasörün kullanıcı ve grup sahipliğini kullanmayı planladığın `PUID` ve `PGID` ile eşleşecek şekilde ayarladığından emin olmalısın. Örneğin:
+In the image, the `entrypoint.sh` script ensures the creation of the `siyuan` user and group with the specified `PUID` and `PGID`. Therefore, when the host creates a workspace folder, pay attention to setting the user and group ownership of the folder to match the `PUID` and `PGID` you plan to use. For example:
 
 ```bash
 chown -R 1001:1002 /siyuan/workspace
 ```
 
-Eğer özel `PUID` ve `PGID` değerleri kullanıyorsan, `entrypoint` betiği konteyner içinde doğru kullanıcı ve grubun oluşturulmasını sağlar ve bağlanan (mount edilen) birimlerin sahipliği buna göre otomatik olarak ayarlanır. Bu nedenle `docker run` veya `docker-compose` komutlarında manuel olarak `-u` parametresi vermene gerek yoktur; ortam değişkenleri bu özelleştirmeyi zaten otomatik olarak halleder.
+If you use custom `PUID` and `PGID` values, the entrypoint script will ensure that the correct user and group are created inside the container, and ownership of mounted volumes will be adjusted accordingly. There’s no need to manually pass `-u` in `docker run` or `docker-compose` as the environment variables will handle the customization.
 
-#### Gizli Port
+#### Hidden port
 
-Port 6806’yı gizlemek için NGINX ters proxy (reverse proxy) kullan. Dikkat edilmesi gerekenler:
+Use NGINX reverse proxy to hide port 6806, please note:
 
-* WebSocket ters proxy’sini `/ws` yoluna göre yapılandır.
+* Configure WebSocket reverse proxy `/ws`
 
-#### Notlar
+#### Note
 
-* Bağlanan (mount edilen) disk birimlerinin doğru olduğundan emin ol; aksi halde konteyner silindiğinde veriler kaybolur.  
-* Yönlendirme (redirect) için URL yeniden yazımı (rewrite) kullanma; bu, kimlik doğrulamayla ilgili sorunlara neden olabilir. Bunun yerine ters proxy yapılandırmanı öneririz.  
-* Eğer izin sorunlarıyla karşılaşırsan, `PUID` ve `PGID` ortam değişkenlerinin, ana makinedeki bağlanan dizinlerin sahipliğiyle uyuştuğundan emin ol.
+* Be sure to confirm the correctness of the mounted volume, otherwise the data will be lost after the container is deleted
+* Do not use URL rewriting for redirection, otherwise there may be problems with authentication, it is recommended to configure a reverse proxy
+* If you encounter permission issues, verify that the `PUID` and `PGID` environment variables match the ownership of the mounted directories on your host system
 
-#### Kısıtlamalar
+#### Limitations
 
-* Masaüstü ve mobil uygulama bağlantılarını desteklemez; yalnızca tarayıcı üzerinden kullanım mümkündür.  
-* PDF, HTML ve Word formatlarına dışa aktarma desteklenmez.  
-* Markdown dosyası içe aktarma desteklenmez.
+* Does not support desktop and mobile application connections, only supports use on browsers
+* Export to PDF, HTML and Word formats is not supported
+* Import Markdown file is not supported
 
 </details>
 
-### Unraid Barındırma
+### Unraid Hosting
 
 <details>
-<summary>Unraid Dağıtımı</summary>
+<summary>Unraid Deployment</summary>
 
-Not: Terminalde önce şu komutu çalıştır: `chown -R 1000:1000 /mnt/user/appdata/siyuan`
+Note: First run `chown -R 1000:1000 /mnt/user/appdata/siyuan` in the terminal
 
-Şablon referansı:
+Template reference:
 
 ```
 Web UI: 6806
@@ -317,12 +317,12 @@ Publish parameters: --accessAuthCode=******(Access authorization code)
 
 </details>
 
-### TrueNAS Barındırma
+### TrueNAS Hosting
 
 <details>
-<summary>TrueNAS Dağıtım Dokümanı</summary>
+<summary>TrueNAS Deployment</summary>
 
-Not: Önce TrueNAS Shell'te aşağıdaki komutları çalıştırın. Lütfen `Pool_1/Apps_Data/siyuan` yolunu uygulamanızın dataset'ine göre güncelleyin。
+Note: First run below commands in the TrueNAS Shell. please update `Pool_1/Apps_Data/siyuan to match your dataset for Apps.
 
 ```shell
 zfs create Pool_1/Apps_Data/siyuan
@@ -330,9 +330,9 @@ chown -R 1001:1002 /mnt/Pool_1/Apps_Data/siyuan
 chmod 755 /mnt/Pool_1/Apps_Data/siyuan
 ```
 
-Apps --> DiscoverApps --> More Options (sağ üst, Custom App hariç) --> YAML ile Yükle bölümüne gidin
+Navigate to Apps - DiscoverApps - More Options(on top right, besies Custom App) - Install via YAML
 
-Şablon örneği：
+Template reference:
 
 ```yaml
 services:
@@ -353,98 +353,97 @@ services:
 
 </details>
 
-### Erken Önizleme (Insider Preview)
+### Insider Preview
 
-Büyük güncellemelerden önce erken erişim (Insider Preview) sürümlerini yayınlıyoruz. Lütfen [https://github.com/siyuan-note/insider](https://github.com/siyuan-note/insider) adresini ziyaret edin.
+We release insider preview before major updates, please visit [https://github.com/siyuan-note/insider](https://github.com/siyuan-note/insider).
 
-## 🏘️ Topluluk
+## 🏘️ Community
 
-* [İngilizce Tartışma Forumu](https://liuyun.io)
-* [Kullanıcı topluluğu özeti](https://liuyun.io/article/1687779743723)
-* [Harika SiYuan (Awesome SiYuan)](https://github.com/siyuan-note/awesome)
+* [English Discussion Forum](https://liuyun.io)
+* [User community summary](https://liuyun.io/article/1687779743723)
+* [Awesome SiYuan](https://github.com/siyuan-note/awesome)
 
-## 🛠️ Geliştirme Rehberi
+## 🛠️ Development Guide
 
-[Geliştirme Rehberi](https://github.com/siyuan-note/siyuan/blob/master/.github/CONTRIBUTING.md) sayfasına göz atın.
+See [Development Guide](https://github.com/siyuan-note/siyuan/blob/master/.github/CONTRIBUTING.md).
 
-## ❓ SSS (Sıkça Sorulan Sorular)
+## ❓ FAQ
 
-### SiYuan verileri nasıl saklar?
+### How does SiYuan store data?
 
-Veriler, çalışma alanı klasöründeki `data` klasöründe saklanır:
+The data is saved in the workspace folder, in the workspace data folder:
 
-* `assets`: eklenen tüm varlıkların (dosya, resim vb.) kaydedildiği klasör  
-* `emojis`: emoji görsellerinin kaydedildiği klasör  
-* `snippets`: kod parçacıklarının kaydedildiği klasör  
-* `storage`: sorgular, düzenler ve ezber kartları gibi verilerin saklandığı klasör  
-* `templates`: şablon parçacıklarının kaydedildiği klasör  
-* `widgets`: bileşenlerin kaydedildiği klasör  
-* `plugins`: eklentilerin kaydedildiği klasör  
-* `public`: genel verilerin saklandığı klasör  
-* Diğer klasörler, kullanıcının oluşturduğu not defteri (notebook) klasörleridir. `.sy` uzantılı dosyalar belge verilerini saklar ve JSON formatındadır.
+* `assets` is used to save all inserted assets
+* `emojis` is used to save emoji images
+* `snippets` is used to save code snippets
+* `storage` is used to save query conditions, layouts and flashcards, etc.
+* `templates` is used to save template snippets
+* `widgets` is used to save widgets
+* `plugins` is used to save plugins
+* `public` is used to save public data
+* The rest of the folders are the notebook folders created by the user, files with the suffix of `.sy` in the notebook folder are used to save the document data, and the data format is JSON
 
-### Üçüncü taraf senkronizasyon diskiyle veri senkronizasyonu destekleniyor mu?
+### Does it support data synchronization through a third-party sync disk?
 
-Üçüncü taraf senkronizasyon diskleriyle (örneğin OneDrive, Dropbox vb.) veri senkronizasyonu **desteklenmez**. Aksi takdirde veriler bozulabilir.
+Data synchronization through third-party synchronization disks is not supported, otherwise data may be corrupted.
 
-Bununla birlikte, üyelik avantajları kapsamında **üçüncü taraf bulut depolama hizmetleriyle bağlantı** desteklenmektedir.
+Although it does not support third-party sync disks, it supports connect with third-party cloud storage (Member's privileges).
 
-Alternatif olarak, verileri **elle dışa aktarıp içe aktararak** senkronizasyon sağlayabilirsin:
+In addition, you can also consider manually exporting and importing data to achieve data synchronization:
 
-* Masaüstü: <kbd>Ayarlar</kbd> → <kbd>Dışa Aktar</kbd> → <kbd>Verileri Dışa Aktar / Verileri İçe Aktar</kbd>  
-* Mobil: <kbd>Sağ panel</kbd> → <kbd>Hakkında</kbd> → <kbd>Verileri Dışa Aktar / Verileri İçe Aktar</kbd>
+* Desktop: <kbd>Settings</kbd> - <kbd>Export</kbd> - <kbd>Export Data</kbd> / <kbd>Import Data</kbd>
+* Mobile: <kbd>Right column</kbd> - <kbd>About</kbd> - <kbd>Export Data</kbd> / <kbd>Import Data</kbd>
 
-### SiYuan açık kaynak mı?
+### Is SiYuan open source?
 
-Evet, SiYuan tamamen açık kaynaklıdır ve katkılara açıktır:
+SiYuan is completely open source, and contributions are welcome:
 
-* [Kullanıcı Arayüzü ve Çekirdek](https://github.com/siyuan-note/siyuan)  
-* [Android](https://github.com/siyuan-note/siyuan-android)  
-* [iOS](https://github.com/siyuan-note/siyuan-ios)  
-* [HarmonyOS](https://github.com/siyuan-note/siyuan-harmony)  
-* [Chrome Kırpma Uzantısı](https://github.com/siyuan-note/siyuan-chrome)
+* [User Interface and Kernel](https://github.com/siyuan-note/siyuan)
+* [Android](https://github.com/siyuan-note/siyuan-android)
+* [iOS](https://github.com/siyuan-note/siyuan-ios)
+* [HarmonyOS](https://github.com/siyuan-note/siyuan-harmony)
+* [Chrome Clipping Extension](https://github.com/siyuan-note/siyuan-chrome)
 
-Daha fazla bilgi için [Geliştirme Rehberi](https://github.com/siyuan-note/siyuan/blob/master/.github/CONTRIBUTING.md) sayfasına bakabilirsiniz.
+For more details, please refer to [Development Guide](https://github.com/siyuan-note/siyuan/blob/master/.github/CONTRIBUTING.md).
 
-### Yeni bir sürüme nasıl yükseltilir?
+### How to upgrade to a new version?
 
-* Uygulama mağazası üzerinden kurduysanız, güncellemeyi yine uygulama mağazası üzerinden yapın.  
-* Masaüstü kurulum paketiyle yüklediyseniz, <kbd>Ayarlar</kbd> → <kbd>Hakkında</kbd> → <kbd>Güncelleme kurulum paketini otomatik indir</kbd> seçeneğini etkinleştirin. Böylece SiYuan, en son sürüm kurulum paketini otomatik indirip yükleme uyarısı gösterecektir.  
-* Manuel yükleme yaptıysanız, en son kurulum paketini indirip yeniden yüklemeniz gerekir.
+* If installed via app store, please update via app store
+* If it is installed through the installation package on the desktop, you can open the option of <kbd>Settings</kbd> - <kbd>About</kbd> - <kbd>Automatically download update installation package</kbd>, so that SiYuan will automatically download The latest version of the installation package and prompts to install
+* If it is installed by manual installation package, please download the installation package again to install
 
-Ayrıca, <kbd>Ayarlar</kbd> → <kbd>Hakkında</kbd> → <kbd>Geçerli Sürüm</kbd> sekmesinden <kbd>Güncellemeyi kontrol et</kbd> seçeneğini kullanabilir veya [Resmî İndirme Sayfası](https://b3log.org/siyuan/en/download.html) ya da [GitHub Sürümleri](https://github.com/siyuan-note/siyuan/releases) sayfalarını takip edebilirsiniz.
+You can <kbd>Check update</kbd> in <kbd>Settings</kbd> - <kbd>About</kbd> - <kbd>Current Version</kbd>, or pay attention to [Official Download](https://b3log.org/siyuan/en/download.html) or [GitHub Releases](https://github.com/siyuan-note/siyuan/releases) to get the new version.
 
-### Bazı bloklar (örneğin liste öğelerindeki paragraflar) blok simgesini bulamıyorsa ne yapmalıyım?
+### What if some blocks (such as paragraph blocks in list items) cannot find the block icon?
 
-Liste öğesinin altındaki ilk alt blok, blok simgesi görünmeyen bloktur. İmleci bu bloğa getirip <kbd>Ctrl+/</kbd> tuş kombinasyonuyla blok menüsünü açabilirsin.
+The first sub-block under the list item is the block icon omitted. You can move the cursor into this block and trigger its block menu with <kbd>Ctrl+/</kbd> .
 
-### Veri deposu anahtarı (data repo key) kaybolursa ne yapmalıyım?
+### What should I do if the data repo key is lost?
 
-* Eğer daha önce birden fazla cihazda doğru şekilde başlatıldıysa, tüm cihazlarda aynı anahtar kullanılır. Bu durumda anahtarı şu adımlarla kopyalayabilirsin:
-  <kbd>Ayarlar</kbd> → <kbd>Hakkında</kbd> → <kbd>Veri deposu anahtarı</kbd> → <kbd>Anahtar dizgesini kopyala</kbd>  
-* Eğer cihazlar arasında farklı anahtarlar kullanılmışsa veya hiçbiri erişilebilir değilse, aşağıdaki adımlarla yeni bir anahtar oluşturabilirsin:
+* If the data repo key is correctly initialized on multiple devices before, the key is the same on all devices and can be set in <kbd>Settings</kbd> - <kbd>About</kbd> - <kbd>Data repo key</kbd> - <kbd>Copy key string</kbd> retrieve
+* If it has not been configured correctly before (for example, the keys on multiple devices are inconsistent) or all devices are unavailable and the key string cannot be obtained, you can reset the key by following the steps below:
 
-  1. Verilerini manuel olarak yedekle (<kbd>Verileri Dışa Aktar</kbd> seçeneğiyle veya dosya sisteminde `workspace/data/` klasörünü kopyalayarak).  
-  2. <kbd>Ayarlar</kbd> → <kbd>Hakkında</kbd> → <kbd>Veri deposu anahtarı</kbd> → <kbd>Veri deposunu sıfırla</kbd>.  
-  3. Anahtarı yeniden başlat. Bir cihazda oluşturduktan sonra diğer cihazlara bu anahtarı aktar.  
-  4. Bulutta yeni senkronizasyon dizinini kullan; eski dizin artık erişilemez ve silinebilir.  
-  5. Mevcut bulut anlık görüntüleri (snapshot) artık geçerli değildir, bunlar da silinebilir.
+  1. Manually back up the data, you can use <kbd>Export Data</kbd> or directly copy the <kbd>workspace/data/</kbd> folder on the file system
+  2. <kbd>Settings</kbd> - <kbd>About</kbd> - <kbd>Data rep key</kbd> - <kbd>Reset data repo</kbd>
+  3. Reinitialize the data repo key. After initializing the key on one device, other devices import the key
+  4. The cloud uses the new synchronization directory, the old synchronization directory is no longer available and can be deleted
+  5. The existing cloud snapshots are no longer available and can be deleted
 
-### Ücretli mi?
+### Do I need to pay for it?
 
-Çoğu özellik ücretsizdir — ticari kullanım da dahil. 
+Most features are free, even for commercial use.
 
-Ancak üyelik ayrıcalıkları yalnızca ödeme sonrasında kullanılabilir. Detaylar için [Fiyatlandırma](https://b3log.org/siyuan/en/pricing.html) sayfasına bakabilirsiniz.
+Member's privileges can only be used after payment, please refer to [Pricing](https://b3log.org/siyuan/en/pricing.html).
 
-## 🙏 Teşekkür
+## 🙏 Acknowledgement
 
-SiYuan’ın doğuşu, birçok açık kaynak projesi ve katkıcısının emeğiyle mümkün olmuştur. Daha fazla bilgi için proje kaynak kodlarındaki `kernel/go.mod`, `app/package.json` ve proje anasayfasına bakabilirsiniz.
+The birth of SiYuan is inseparable from many open source projects and contributors, please refer to the project source code kernel/go.mod, app/package.json and project homepage.
 
-SiYuan’ın gelişimi, kullanıcı geri bildirimleri ve desteğiyle büyümeye devam ediyor. SiYuan’a katkı sağlayan herkese teşekkürler ❤️
+The growth of SiYuan is inseparable from user feedback and promotion, thank you for everyone's help to SiYuan ❤️
 
-### Katkıda Bulunanlar
+### Contributors
 
-Bize katıl ve SiYuan’a birlikte katkı yap! 💪  
+Welcome to join us and contribute code to SiYuan together.
 
 <a href="https://github.com/siyuan-note/siyuan/graphs/contributors">
    <img src="https://contrib.rocks/image?repo=siyuan-note/siyuan" />

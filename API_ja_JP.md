@@ -1,82 +1,83 @@
-[English](API.md)
+**English**
 | [中文](API_zh_CN.md)
-| **日本語**
+| [日本語](API_ja_JP.md)
 
-* [仕様](#仕様)
-    * [パラメータと戻り値](#パラメータと戻り値)
-    * [認証](#認証)
-* [ノートブック](#ノートブック)
-    * [ノートブック一覧を取得](#ノートブック一覧を取得)
-    * [ノートブックを開く](#ノートブックを開く)
-    * [ノートブックを閉じる](#ノートブックを閉じる)
-    * [ノートブックの名前を変更](#ノートブックの名前を変更)
-    * [ノートブックを作成](#ノートブックを作成)
-    * [ノートブックを削除](#ノートブックを削除)
-    * [ノートブック設定を取得](#ノートブック設定を取得)
-    * [ノートブック設定を保存](#ノートブック設定を保存)
-* [ドキュメント](#ドキュメント)
-    * [Markdownでドキュメントを作成](#Markdownでドキュメントを作成)
-    * [ドキュメントの名前を変更](#ドキュメントの名前を変更)
-    * [ドキュメントを削除](#ドキュメントを削除)
-    * [ドキュメントを移動](#ドキュメントを移動)
-    * [パスから人間が読めるパスを取得](#パスから人間が読めるパスを取得)
-    * [IDから人間が読めるパスを取得](#IDから人間が読めるパスを取得)
-    * [IDからストレージパスを取得](#IDからストレージパスを取得)
-    * [人間が読めるパスからIDを取得](#人間が読めるパスからIDを取得)
-* [アセット](#アセット)
-    * [アセットをアップロード](#アセットをアップロード)
-* [ブロック](#ブロック)
-    * [ブロックを挿入](#ブロックを挿入)
-    * [ブロックを先頭に挿入](#ブロックを先頭に挿入)
-    * [ブロックを末尾に追加](#ブロックを末尾に追加)
-    * [ブロックを更新](#ブロックを更新)
-    * [ブロックを削除](#ブロックを削除)
-    * [ブロックを移動](#ブロックを移動)
-    * [ブロックを折りたたむ](#ブロックを折りたたむ)
-    * [ブロックを展開](#ブロックを展開)
-    * [ブロックのkramdownを取得](#ブロックのkramdownを取得)
-    * [子ブロックを取得](#子ブロックを取得)
-    * [ブロック参照を移行](#ブロック参照を移行)
-* [属性](#属性)
-    * [ブロック属性を設定](#ブロック属性を設定)
-    * [ブロック属性を取得](#ブロック属性を取得)
+* [Specification](#Specification)
+    * [Parameters and return values](#Parameters-and-return-values)
+    * [Authentication](#Authentication)
+* [Notebooks](#Notebooks)
+    * [List notebooks](#List-notebooks)
+    * [Open a notebook](#Open-a-notebook)
+    * [Close a notebook](#Close-a-notebook)
+    * [Rename a notebook](#Rename-a-notebook)
+    * [Create a notebook](#Create-a-notebook)
+    * [Remove a notebook](#Remove-a-notebook)
+    * [Get notebook configuration](#Get-notebook-configuration)
+    * [Save notebook configuration](#Save-notebook-configuration)
+* [Documents](#Documents)
+    * [Create a document with Markdown](#Create-a-document-with-Markdown)
+    * [Rename a document](#Rename-a-document)
+    * [Remove a document](#Remove-a-document)
+    * [Move documents](#Move-documents)
+    * [Get human-readable path based on path](#Get-human-readable-path-based-on-path)
+    * [Get human-readable path based on ID](#Get-human-readable-path-based-on-ID)
+    * [Get storage path based on ID](#Get-storage-path-based-on-ID)
+    * [Get IDs based on human-readable path](#Get-IDs-based-on-human-readable-path)
+* [Assets](#Assets)
+    * [Upload assets](#Upload-assets)
+* [Blocks](#Blocks)
+    * [Insert blocks](#Insert-blocks)
+    * [Prepend blocks](#Prepend-blocks)
+    * [Append blocks](#Append-blocks)
+    * [Update a block](#Update-a-block)
+    * [Delete a block](#Delete-a-block)
+    * [Move a block](#Move-a-block)
+    * [Fold a block](#Fold-a-block)
+    * [Unfold a block](#Unfold-a-block)
+    * [Get a block kramdown](#Get-a-block-kramdown)
+    * [Get child blocks](#get-child-blocks)
+    * [Transfer block ref](#transfer-block-ref)
+* [Attributes](#Attributes)
+    * [Set block attributes](#Set-block-attributes)
+    * [Get block attributes](#Get-block-attributes)
 * [SQL](#SQL)
-    * [SQLクエリを実行](#SQLクエリを実行)
-    * [トランザクションをフラッシュ](#トランザクションをフラッシュ)
-* [テンプレート](#テンプレート)
-    * [テンプレートをレンダリング](#テンプレートをレンダリング)
-    * [Sprigをレンダリング](#Sprigをレンダリング)
-* [ファイル](#ファイル)
-    * [ファイルを取得](#ファイルを取得)
-    * [ファイルを配置](#ファイルを配置)
-    * [ファイルを削除](#ファイルを削除)
-    * [ファイルの名前を変更](#ファイルの名前を変更)
-    * [ファイル一覧を取得](#ファイル一覧を取得)
-* [エクスポート](#エクスポート)
-    * [Markdownをエクスポート](#Markdownをエクスポート)
-    * [ファイルとフォルダをエクスポート](#ファイルとフォルダをエクスポート)
-* [変換](#変換)
+    * [Execute SQL query](#Execute-SQL-query)
+    * [Flush transaction](#Flush-transaction)
+* [Templates](#Templates)
+    * [Render a template](#Render-a-template)
+    * [Render Sprig](#Render-Sprig)
+* [File](#File)
+    * [Get file](#Get-file)
+    * [Put file](#Put-file)
+    * [Remove file](#Remove-file)
+    * [Rename file](#Rename-file)
+    * [List files](#List-files)
+* [Export](#Export)
+    * [Export Markdown](#Export-Markdown)
+    * [Export Files and Folders](#Export-files-and-folders)
+* [Conversion](#Conversion)
     * [Pandoc](#Pandoc)
-* [通知](#通知)
-    * [メッセージをプッシュ](#メッセージをプッシュ)
-    * [エラーメッセージをプッシュ](#エラーメッセージをプッシュ)
-* [ネットワーク](#ネットワーク)
-    * [フォワードプロキシ](#フォワードプロキシ)
-* [システム](#システム)
-    * [起動進捗を取得](#起動進捗を取得)
-    * [システムバージョンを取得](#システムバージョンを取得)
-    * [システムの現在時刻を取得](#システムの現在時刻を取得)
+* [Notification](#Notification)
+    * [Push message](#Push-message)
+    * [Push error message](#Push-error-message)
+* [Network](#Network)
+    * [Forward proxy](#Forward-proxy)
+* [System](#System)
+    * [Get boot progress](#Get-boot-progress)
+    * [Get system version](#Get-system-version)
+    * [Get the current time of the system](#Get-the-current-time-of-the-system)
 
 ---
 
-## 仕様
+## Specification
 
-### パラメータと戻り値
+### Parameters and return values
 
-* エンドポイント: `http://127.0.0.1:6806`
-* すべてPOSTメソッドを使用
-* パラメータを持つインターフェースでは、パラメータはJSON文字列としてbodyに配置し、ヘッダーのContent-Typeは`application/json`とする
-* 戻り値
+* Endpoint: `http://127.0.0.1:6806`
+* Both are POST methods
+* An interface with parameters is required, the parameter is a JSON string, placed in the body, and the header
+  Content-Type is `application/json`
+* Return value
 
    ````json
    {
@@ -86,21 +87,21 @@
    }
    ````
 
-    * `code`: 0以外は例外を示す
-    * `msg`: 通常は空文字列、異常時にはエラーテキストが返される
-    * `data`: インターフェースによって`{}`、`[]`、または`NULL`となる
+    * `code`: non-zero for exceptions
+    * `msg`: an empty string under normal circumstances, an error text will be returned under abnormal conditions
+    * `data`: may be `{}`, `[]` or `NULL`, depending on the interface
 
-### 認証
+### Authentication
 
-<kbd>設定 - このアプリケーションについて</kbd>でAPIトークンを確認し、リクエストヘッダーに `Authorization: Token xxx` を設定
+View API token in <kbd>Settings - About</kbd>, request header: `Authorization: Token xxx`
 
-## ノートブック
+## Notebooks
 
-### ノートブック一覧を取得
+### List notebooks
 
 * `/api/notebook/lsNotebooks`
-* パラメータなし
-* 戻り値
+* No parameters
+* Return value
 
   ```json
   {
@@ -109,15 +110,15 @@
     "data": {
       "notebooks": [
         {
-          "id": "20210817205410-2kvfpfn",
-          "name": "テスト用ノートブック",
+          "id": "20210817205410-2kvfpfn", 
+          "name": "Test Notebook",
           "icon": "1f41b",
           "sort": 0,
           "closed": false
         },
         {
           "id": "20210808180117-czj9bvb",
-          "name": "SiYuanユーザーガイド",
+          "name": "SiYuan User Guide",
           "icon": "1f4d4",
           "sort": 1,
           "closed": false
@@ -127,10 +128,10 @@
   }
   ```
 
-### ノートブックを開く
+### Open a notebook
 
 * `/api/notebook/openNotebook`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -138,8 +139,8 @@
   }
   ```
 
-    * `notebook`: ノートブックID
-* 戻り値
+    * `notebook`: Notebook ID
+* Return value
 
   ```json
   {
@@ -149,10 +150,10 @@
   }
   ```
 
-### ノートブックを閉じる
+### Close a notebook
 
 * `/api/notebook/closeNotebook`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -160,8 +161,8 @@
   }
   ```
 
-    * `notebook`: ノートブックID
-* 戻り値
+    * `notebook`: Notebook ID
+* Return value
 
   ```json
   {
@@ -171,20 +172,20 @@
   }
   ```
 
-### ノートブックの名前を変更
+### Rename a notebook
 
 * `/api/notebook/renameNotebook`
-* パラメータ
+* Parameters
 
   ```json
   {
     "notebook": "20210831090520-7dvbdv0",
-    "name": "ノートブックの新しい名前"
+    "name": "New name for notebook"
   }
   ```
 
-    * `notebook`: ノートブックID
-* 戻り値
+    * `notebook`: Notebook ID
+* Return value
 
   ```json
   {
@@ -194,17 +195,17 @@
   }
   ```
 
-### ノートブックを作成
+### Create a notebook
 
 * `/api/notebook/createNotebook`
-* パラメータ
+* Parameters
 
   ```json
   {
-    "name": "ノートブック名"
+    "name": "Notebook name"
   }
   ```
-* 戻り値
+* Return value
 
   ```json
   {
@@ -213,7 +214,7 @@
     "data": {
       "notebook": {
         "id": "20220126215949-r1wvoch",
-        "name": "ノートブック名",
+        "name": "Notebook name",
         "icon": "",
         "sort": 0,
         "closed": false
@@ -222,10 +223,10 @@
   }
   ```
 
-### ノートブックを削除
+### Remove a notebook
 
 * `/api/notebook/removeNotebook`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -233,8 +234,8 @@
   }
   ```
 
-    * `notebook`: ノートブックID
-* 戻り値
+    * `notebook`: Notebook ID
+* Return value
 
   ```json
   {
@@ -244,10 +245,10 @@
   }
   ```
 
-### ノートブック設定を取得
+### Get notebook configuration
 
 * `/api/notebook/getNotebookConf`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -255,8 +256,8 @@
   }
   ```
 
-    * `notebook`: ノートブックID
-* 戻り値
+    * `notebook`: Notebook ID
+* Return value
 
   ```json
   {
@@ -265,28 +266,28 @@
     "data": {
       "box": "20210817205410-2kvfpfn",
       "conf": {
-        "name": "テスト用ノートブック",
+        "name": "Test Notebook",
         "closed": false,
         "refCreateSavePath": "",
         "createDocNameTemplate": "",
         "dailyNoteSavePath": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}",
         "dailyNoteTemplatePath": ""
       },
-      "name": "テスト用ノートブック"
+      "name": "Test Notebook"
     }
   }
   ```
 
-### ノートブック設定を保存
+### Save notebook configuration
 
 * `/api/notebook/setNotebookConf`
-* パラメータ
+* Parameters
 
   ```json
   {
     "notebook": "20210817205410-2kvfpfn",
     "conf": {
-        "name": "テスト用ノートブック",
+        "name": "Test Notebook",
         "closed": false,
         "refCreateSavePath": "",
         "createDocNameTemplate": "",
@@ -296,15 +297,15 @@
   }
   ```
 
-    * `notebook`: ノートブックID
-* 戻り値
+    * `notebook`: Notebook ID
+* Return value
 
   ```json
   {
     "code": 0,
     "msg": "",
     "data": {
-      "name": "テスト用ノートブック",
+      "name": "Test Notebook",
       "closed": false,
       "refCreateSavePath": "",
       "createDocNameTemplate": "",
@@ -314,12 +315,12 @@
   }
   ```
 
-## ドキュメント
+## Documents
 
-### Markdownでドキュメントを作成
+### Create a document with Markdown
 
 * `/api/filetree/createDocWithMd`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -329,10 +330,11 @@
   }
   ```
 
-    * `notebook`: ノートブックID
-    * `path`: ドキュメントパス、/で始まり/で階層を区切る（このpathはデータベースのhpathフィールドに対応）
-    * `markdown`: GFM Markdownコンテンツ
-* 戻り値
+    * `notebook`: Notebook ID
+    * `path`: Document path, which needs to start with / and separate levels with / (path here corresponds to the
+      database hpath field)
+    * `markdown`: GFM Markdown content
+* Return value
 
   ```json
   {
@@ -342,26 +344,26 @@
   }
   ```
 
-    * `data`: 作成されたドキュメントID
-    * 同じ`path`でこのインターフェースを繰り返し呼び出しても、既存のドキュメントは上書きされない
+    * `data`: Created document ID
+    * If you use the same `path` to call this interface repeatedly, the existing document will not be overwritten
 
-### ドキュメントの名前を変更
+### Rename a document
 
 * `/api/filetree/renameDoc`
-* パラメータ
+* Parameters
 
   ```json
   {
     "notebook": "20210831090520-7dvbdv0",
     "path": "/20210902210113-0avi12f.sy",
-    "title": "新しいドキュメントタイトル"
+    "title": "New document title"
   }
   ```
 
-    * `notebook`: ノートブックID
-    * `path`: ドキュメントパス
-    * `title`: 新しいドキュメントタイトル
-* 戻り値
+    * `notebook`: Notebook ID
+    * `path`: Document path
+    * `title`: New document title
+* Return value
 
   ```json
   {
@@ -371,21 +373,21 @@
   }
   ```
 
-`id`でドキュメントの名前を変更:
+Rename a document by `id`:
 
 * `/api/filetree/renameDocByID`
-* パラメータ
+* Parameters
 
   ```json
   {
     "id": "20210902210113-0avi12f",
-    "title": "新しいドキュメントタイトル"
+    "title": "New document title"
   }
   ```
 
-    * `id`: ドキュメントID
-    * `title`: 新しいドキュメントタイトル
-* 戻り値
+    * `id`: Document ID
+    * `title`: New document title
+* Return value
 
   ```json
   {
@@ -395,10 +397,10 @@
   }
   ```
 
-### ドキュメントを削除
+### Remove a document
 
 * `/api/filetree/removeDoc`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -407,9 +409,9 @@
   }
   ```
 
-    * `notebook`: ノートブックID
-    * `path`: ドキュメントパス
-* 戻り値
+    * `notebook`: Notebook ID
+    * `path`: Document path
+* Return value
 
   ```json
   {
@@ -419,10 +421,10 @@
   }
   ```
 
-`id`でドキュメントを削除:
+Remove a document by `id`:
 
 * `/api/filetree/removeDocByID`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -430,8 +432,8 @@
   }
   ```
 
-    * `id`: ドキュメントID
-* 戻り値
+    * `id`: Document ID
+* Return value
 
   ```json
   {
@@ -441,10 +443,10 @@
   }
   ```
 
-### ドキュメントを移動
+### Move documents
 
 * `/api/filetree/moveDocs`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -454,10 +456,10 @@
   }
   ```
 
-    * `fromPaths`: 移動元パス
-    * `toNotebook`: 移動先ノートブックID
-    * `toPath`: 移動先パス
-* 戻り値
+    * `fromPaths`: Source paths
+    * `toNotebook`: Target notebook ID
+    * `toPath`: Target path
+* Return value
 
   ```json
   {
@@ -467,10 +469,10 @@
   }
   ```
 
-`id`でドキュメントを移動:
+Move documents by `id`:
 
 * `/api/filetree/moveDocsByID`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -479,9 +481,9 @@
   }
   ```
 
-    * `fromIDs`: 移動元ドキュメントのID
-    * `toID`: 移動先の親ドキュメントIDまたはノートブックID
-* 戻り値
+    * `fromIDs`: Source docs' IDs
+    * `toID`: Target parent doc's ID or notebook ID
+* Return value
 
   ```json
   {
@@ -491,10 +493,10 @@
   }
   ```
 
-### パスから人間が読めるパスを取得
+### Get human-readable path based on path
 
 * `/api/filetree/getHPathByPath`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -503,9 +505,9 @@
   }
   ```
 
-    * `notebook`: ノートブックID
-    * `path`: ドキュメントパス
-* 戻り値
+    * `notebook`: Notebook ID
+    * `path`: Document path
+* Return value
 
   ```json
   {
@@ -515,10 +517,10 @@
   }
   ```
 
-### IDから人間が読めるパスを取得
+### Get human-readable path based on ID
 
 * `/api/filetree/getHPathByID`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -526,8 +528,8 @@
   }
   ```
 
-    * `id`: ブロックID
-* 戻り値
+    * `id`: Block ID
+* Return value
 
   ```json
   {
@@ -537,10 +539,10 @@
   }
   ```
 
-### IDからストレージパスを取得
+### Get storage path based on ID
 
 * `/api/filetree/getPathByID`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -548,8 +550,8 @@
   }
   ```
 
-    * `id`: ブロックID
-* 戻り値
+    * `id`: Block ID
+* Return value
 
   ```json
   {
@@ -562,10 +564,10 @@
   }
   ```
 
-### 人間が読めるパスからIDを取得
+### Get IDs based on human-readable path
 
 * `/api/filetree/getIDsByHPath`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -574,9 +576,9 @@
   }
   ```
 
-    * `path`: 人間が読めるパス
-    * `notebook`: ノートブックID
-* 戻り値
+    * `path`: Human-readable path
+    * `notebook`: Notebook ID
+* Return value
 
   ```json
   {
@@ -588,20 +590,21 @@
   }
   ```
 
-## アセット
+## Assets
 
-### アセットをアップロード
+### Upload assets
 
 * `/api/asset/upload`
-* パラメータはHTTP Multipartフォーム
+* The parameter is an HTTP Multipart form
 
-    * `assetsDirPath`: アセットが保存されるフォルダパス、dataフォルダをルートパスとする、例:
-        * `"/assets/"`: workspace/data/assets/ フォルダ
-        * `"/assets/sub/"`: workspace/data/assets/sub/ フォルダ
+    * `assetsDirPath`: The folder path where assets are stored, with the data folder as the root path, for example:
+        * `"/assets/"`: workspace/data/assets/ folder
+        * `"/assets/sub/"`: workspace/data/assets/sub/ folder
 
-      通常は最初の方法を推奨、ワークスペースのassetsフォルダに保存される。サブディレクトリに配置すると副作用があるため、ユーザーガイドのアセットの章を参照。
-    * `file[]`: アップロードするファイルリスト
-* 戻り値
+      Under normal circumstances, it is recommended to use the first method, which is stored in the assets folder of the
+      workspace, putting in a subdirectory has some side effects, please refer to the assets chapter of the user guide.
+    * `file[]`: Uploaded file list
+* Return value
 
   ```json
   {
@@ -616,15 +619,17 @@
   }
   ```
 
-    * `errFiles`: アップロード処理でエラーが発生したファイル名のリスト
-    * `succMap`: 正常に処理されたファイル、キーはアップロード時のファイル名、値はassets/foo-id.pngで、既存のMarkdownコンテンツ内のアセットリンクアドレスをアップロードされたアドレスに置き換えるために使用
+    * `errFiles`: List of filenames with errors in upload processing
+    * `succMap`: For successfully processed files, the key is the file name when uploading, and the value is
+      assets/foo-id.png, which is used to replace the asset link address in the existing Markdown content with the
+      uploaded address
 
-## ブロック
+## Blocks
 
-### ブロックを挿入
+### Insert blocks
 
 * `/api/block/insertBlock`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -636,14 +641,15 @@
   }
   ```
 
-    * `dataType`: 挿入するデータ型、`markdown`または`dom`
-    * `data`: 挿入するデータ
-    * `nextID`: 次のブロックのID、挿入位置を固定するために使用
-    * `previousID`: 前のブロックのID、挿入位置を固定するために使用
-    * `parentID`: 親ブロックのID、挿入位置を固定するために使用
+    * `dataType`: The data type to be inserted, the value can be `markdown` or `dom`
+    * `data`: Data to be inserted
+    * `nextID`: The ID of the next block, used to anchor the insertion position
+    * `previousID`: The ID of the previous block, used to anchor the insertion position
+    * `parentID`: The ID of the parent block, used to anchor the insertion position
 
-  `nextID`、`previousID`、`parentID`のうち少なくとも1つは値が必要、優先順位: `nextID` > `previousID` > `parentID`
-* 戻り値
+  `nextID`, `previousID`, and `parentID` must have at least one value, using priority: `nextID` > `previousID` >
+  `parentID`
+* Return value
 
   ```json
   {
@@ -667,13 +673,13 @@
   }
   ```
 
-    * `action.data`: 新しく挿入されたブロックによって生成されたDOM
-    * `action.id`: 新しく挿入されたブロックのID
+    * `action.data`: DOM generated by the newly inserted block
+    * `action.id`: ID of the newly inserted block
 
-### ブロックを先頭に挿入
+### Prepend blocks
 
 * `/api/block/prependBlock`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -683,10 +689,10 @@
   }
   ```
 
-    * `dataType`: 挿入するデータ型、`markdown`または`dom`
-    * `data`: 挿入するデータ
-    * `parentID`: 親ブロックのID、挿入位置を固定するために使用
-* 戻り値
+    * `dataType`: The data type to be inserted, the value can be `markdown` or `dom`
+    * `data`: Data to be inserted
+    * `parentID`: The ID of the parent block, used to anchor the insertion position
+* Return value
 
   ```json
   {
@@ -710,13 +716,13 @@
   }
   ```
 
-    * `action.data`: 新しく挿入されたブロックによって生成されたDOM
-    * `action.id`: 新しく挿入されたブロックのID
+    * `action.data`: DOM generated by the newly inserted block
+    * `action.id`: ID of the newly inserted block
 
-### ブロックを末尾に追加
+### Append blocks
 
 * `/api/block/appendBlock`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -726,10 +732,10 @@
   }
   ```
 
-    * `dataType`: 挿入するデータ型、`markdown`または`dom`
-    * `data`: 挿入するデータ
-    * `parentID`: 親ブロックのID、挿入位置を固定するために使用
-* 戻り値
+    * `dataType`: The data type to be inserted, the value can be `markdown` or `dom`
+    * `data`: Data to be inserted
+    * `parentID`: The ID of the parent block, used to anchor the insertion position
+* Return value
 
   ```json
   {
@@ -753,13 +759,13 @@
   }
   ```
 
-    * `action.data`: 新しく挿入されたブロックによって生成されたDOM
-    * `action.id`: 新しく挿入されたブロックのID
+    * `action.data`: DOM generated by the newly inserted block
+    * `action.id`: ID of the newly inserted block
 
-### ブロックを更新
+### Update a block
 
 * `/api/block/updateBlock`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -769,10 +775,10 @@
   }
   ```
 
-    * `dataType`: 更新するデータ型、`markdown`または`dom`
-    * `data`: 更新するデータ
-    * `id`: 更新するブロックのID
-* 戻り値
+    * `dataType`: The data type to be updated, the value can be `markdown` or `dom`
+    * `data`: Data to be updated
+    * `id`: ID of the block to be updated
+* Return value
 
   ```json
   {
@@ -796,12 +802,12 @@
   }
   ```
 
-    * `action.data`: 更新されたブロックによって生成されたDOM
+    * `action.data`: DOM generated by the updated block
 
-### ブロックを削除
+### Delete a block
 
 * `/api/block/deleteBlock`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -809,8 +815,8 @@
   }
   ```
 
-    * `id`: 削除するブロックのID
-* 戻り値
+    * `id`: ID of the block to be deleted
+* Return value
 
   ```json
   {
@@ -834,10 +840,10 @@
   }
   ```
 
-### ブロックを移動
+### Move a block
 
 * `/api/block/moveBlock`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -847,10 +853,11 @@
   }
   ```
 
-    * `id`: 移動するブロックID
-    * `previousID`: 前のブロックのID、挿入位置を固定するために使用
-    * `parentID`: 親ブロックのID、挿入位置を固定するために使用、`previousID`と`parentID`は同時に空にできない、両方存在する場合は`previousID`が優先
-* 戻り値
+    * `id`: Block ID to move
+    * `previousID`: The ID of the previous block, used to anchor the insertion position
+    * `parentID`: The ID of the parent block, used to anchor the insertion position, `previousID` and `parentID` cannot
+      be empty at the same time, if they exist at the same time, `previousID` will be used first
+* Return value
 
   ```json
   {
@@ -878,10 +885,10 @@
   }
   ```
 
-### ブロックを折りたたむ
+### Fold a block
 
 * `/api/block/foldBlock`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -889,8 +896,8 @@
   }
   ```
 
-    * `id`: 折りたたむブロックID
-* 戻り値
+    * `id`: Block ID to fold
+* Return value
 
   ```json
   {
@@ -900,10 +907,10 @@
   }
   ```
 
-### ブロックを展開
+### Unfold a block
 
 * `/api/block/unfoldBlock`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -911,8 +918,8 @@
   }
   ```
 
-    * `id`: 展開するブロックID
-* 戻り値
+    * `id`: Block ID to unfold
+* Return value
 
   ```json
   {
@@ -922,10 +929,10 @@
   }
   ```
 
-### ブロックのkramdownを取得
+### Get a block kramdown
 
 * `/api/block/getBlockKramdown`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -933,8 +940,8 @@
   }
   ```
 
-    * `id`: 取得するブロックのID
-* 戻り値
+    * `id`: ID of the block to be got
+* Return value
 
   ```json
   {
@@ -947,10 +954,10 @@
   }
   ```
 
-### 子ブロックを取得
+### Get child blocks
 
 * `/api/block/getChildBlocks`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -958,9 +965,9 @@
   }
   ```
 
-    * `id`: 親ブロックID
-    * 見出しの下のブロックも子ブロックとしてカウントされる
-* 戻り値
+    * `id`: Parent block ID
+    * The blocks below a heading are also counted as child blocks
+* Return value
 
   ```json
   {
@@ -985,10 +992,10 @@
   }
   ```
 
-### ブロック参照を移行
+### Transfer block ref
 
 * `/api/block/transferBlockRef`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -998,10 +1005,10 @@
   }
   ```
 
-    * `fromID`: 定義ブロックID
-    * `toID`: ターゲットブロックID
-    * `refIDs`: 定義ブロックIDを指す参照ブロックID、オプション、指定しない場合はすべての参照ブロックIDが移行される
-* 戻り値
+    * `fromID`: Def block ID
+    * `toID`: Target block ID
+    * `refIDs`: Ref block IDs point to def block ID, optional, if not specified, all ref block IDs will be transferred
+* Return value
 
   ```json
   {
@@ -1011,12 +1018,12 @@
   }
   ```
 
-## 属性
+## Attributes
 
-### ブロック属性を設定
+### Set block attributes
 
 * `/api/attr/setBlockAttrs`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1027,9 +1034,9 @@
   }
   ```
 
-    * `id`: ブロックID
-    * `attrs`: ブロック属性、カスタム属性は`custom-`プレフィックスが必要
-* 戻り値
+    * `id`: Block ID
+    * `attrs`: Block attributes, custom attributes must be prefixed with `custom-`
+* Return value
 
   ```json
   {
@@ -1039,10 +1046,10 @@
   }
   ```
 
-### ブロック属性を取得
+### Get block attributes
 
 * `/api/attr/getBlockAttrs`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1050,8 +1057,8 @@
   }
   ```
 
-    * `id`: ブロックID
-* 戻り値
+    * `id`: Block ID
+* Return value
 
   ```json
   {
@@ -1069,10 +1076,10 @@
 
 ## SQL
 
-### SQLクエリを実行
+### Execute SQL query
 
 * `/api/query/sql`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1080,8 +1087,8 @@
   }
   ```
 
-    * `stmt`: SQL文
-* 戻り値
+    * `stmt`: SQL statement
+* Return value
 
   ```json
   {
@@ -1093,13 +1100,13 @@
   }
   ```
 
-注：データセキュリティを確保するため、パブリッシュモードでの本インターフェースへのアクセスは禁止されています。
+Note: To ensure data security, access to this interface is prohibited in Publish Mode.
 
-### トランザクションをフラッシュ
+### Flush transaction
 
 * `/api/sqlite/flushTransaction`
-* パラメータなし
-* 戻り値
+* No parameters
+* Return value
 
   ```json
   {
@@ -1109,12 +1116,12 @@
   }
   ```
 
-## テンプレート
+## Templates
 
-### テンプレートをレンダリング
+### Render a template
 
 * `/api/template/render`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1123,9 +1130,9 @@
   }
   ```
 
-    * `id`: レンダリングが呼び出されるドキュメントのID
-    * `path`: テンプレートファイルの絶対パス
-* 戻り値
+    * `id`: The ID of the document where the rendering is called
+    * `path`: Template file absolute path
+* Return value
 
   ```json
   {
@@ -1138,18 +1145,18 @@
   }
   ```
 
-### Sprigをレンダリング
+### Render Sprig
 
 * `/api/template/renderSprig`
-* パラメータ
+* Parameters
 
   ```json
   {
     "template": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}"
   }
   ```
-    * `template`: テンプレートコンテンツ
-* 戻り値
+    * `template`: template content
+* Return value
 
   ```json
   {
@@ -1159,22 +1166,22 @@
   }
   ```
 
-## ファイル
+## File
 
-### ファイルを取得
+### Get file
 
 * `/api/file/getFile`
-* パラメータ
+* Parameters
 
   ``json {
   "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
   }
   ``
-    * `path`: ワークスペースパス配下のファイルパス
-* 戻り値
+    * `path`: the file path under the workspace path
+* Return value
 
-    * レスポンスステータスコード `200`: ファイルコンテンツ
-    * レスポンスステータスコード `202`: 例外情報
+    * Response status code `200`: File content
+    * Response status code `202`: Exception information
 
       ```json
       {
@@ -1184,25 +1191,25 @@
       }
       ```
 
-        * `code`: 0以外は例外
+        * `code`: non-zero for exceptions
 
-            * `-1`: パラメータ解析エラー
-            * `403`: アクセス拒否（ファイルがワークスペース内にない）
-            * `404`: 見つからない（ファイルが存在しない）
-            * `405`: メソッド不許可（ディレクトリである）
-            * `500`: サーバーエラー（ファイルのstat失敗 / ファイルの読み取り失敗）
-        * `msg`: エラーを説明するテキスト
+            * `-1`: Parameter parsing error
+            * `403`: Permission denied (file is not in the workspace)
+            * `404`: Not Found (file doesn't exist)
+            * `405`: Method Not Allowed (it's a directory)
+            * `500`: Server Error (stat file failed / read file failed)
+        * `msg`: a piece of text describing the error
 
-### ファイルを配置
+### Put file
 
 * `/api/file/putFile`
-* パラメータはHTTP Multipartフォーム
+* The parameter is an HTTP Multipart form
 
-    * `path`: ワークスペースパス配下のファイルパス
-    * `isDir`: フォルダを作成するかどうか、`true`の場合はフォルダのみ作成し、`file`を無視
-    * `modTime`: 最終アクセス・更新時刻、Unix時間
-    * `file`: アップロードするファイル
-* 戻り値
+    * `path`: the file path under the workspace path
+    * `isDir`: whether to create a folder, when `true` only create a folder, ignore `file`
+    * `modTime`: last access and modification time, Unix time
+    * `file`: the uploaded file
+* Return value
 
    ```json
    {
@@ -1212,18 +1219,18 @@
    }
    ```
 
-### ファイルを削除
+### Remove file
 
 * `/api/file/removeFile`
-* パラメータ
+* Parameters
 
   ```json
   {
     "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
   }
   ```
-    * `path`: ワークスペースパス配下のファイルパス
-* 戻り値
+    * `path`: the file path under the workspace path
+* Return value
 
   ```json
   {
@@ -1233,10 +1240,10 @@
   }
   ```
 
-### ファイルの名前を変更
+### Rename file
 
 * `/api/file/renameFile`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1244,9 +1251,9 @@
     "newPath": "/data/assets/test-20230523085812-k3o9t32.png"
   }
   ```
-    * `path`: ワークスペースパス配下のファイルパス
-    * `newPath`: ワークスペースパス配下の新しいファイルパス
-* 戻り値
+    * `path`: the file path under the workspace path
+    * `newPath`: the new file path under the workspace path
+* Return value
 
   ```json
   {
@@ -1256,18 +1263,18 @@
   }
   ```
 
-### ファイル一覧を取得
+### List files
 
 * `/api/file/readDir`
-* パラメータ
+* Parameters
 
   ```json
   {
     "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p"
   }
   ```
-    * `path`: ワークスペースパス配下のディレクトリパス
-* 戻り値
+    * `path`: the dir path under the workspace path
+* Return value
 
   ```json
   {
@@ -1290,12 +1297,12 @@
   }
   ```
 
-## エクスポート
+## Export
 
-### Markdownをエクスポート
+### Export Markdown
 
 * `/api/export/exportMdContent`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1303,8 +1310,8 @@
   }
   ```
 
-    * `id`: エクスポートするドキュメントブロックのID
-* 戻り値
+    * `id`: ID of the doc block to export
+* Return value
 
   ```json
   {
@@ -1317,13 +1324,13 @@
   }
   ```
 
-    * `hPath`: 人間が読めるパス
-    * `content`: Markdownコンテンツ
+    * `hPath`: human-readable path
+    * `content`: Markdown content
 
-### ファイルとフォルダをエクスポート
+### Export files and folders
 
 * `/api/export/exportResources`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1337,9 +1344,9 @@
   }
   ```
 
-    * `paths`: エクスポートするファイルまたはフォルダパスのリスト、同じファイル名/フォルダ名は上書きされる
-    * `name`: （オプション）エクスポートするファイル名、設定しない場合はデフォルトで`export-YYYY-MM-DD_hh-mm-ss.zip`
-* 戻り値
+    * `paths`: A list of file or folder paths to be exported, the same filename/folder name will be overwritten
+    * `name`: (Optional) The exported file name, which defaults to `export-YYYY-MM-DD_hh-mm-ss.zip` when not set
+* Return value
 
   ```json
   {
@@ -1351,27 +1358,27 @@
   }
   ```
 
-    * `path`: 作成された`*.zip`ファイルのパス
-        * `zip-file-name.zip`内のディレクトリ構造は以下の通り:
+    * `path`: The path of `*.zip` file created
+        * The directory structure in `zip-file-name.zip` is as follows:
             * `zip-file-name`
                 * `boot`
                 * `langs`
                 * `conf.json`
                 * `index.html`
 
-## 変換
+## Conversion
 
 ### Pandoc
 
 * `/api/convert/pandoc`
-* 作業ディレクトリ
-    * pandocコマンドの実行時、作業ディレクトリは`workspace/temp/convert/pandoc/${dir}`に設定される
-    * API [`ファイルを配置`](#ファイルを配置)を使用して、変換するファイルをこのディレクトリに先に書き込むことができる
-    * その後、APIを呼び出して変換し、変換されたファイルもこのディレクトリに書き込まれる
-    * 最後に、API [`ファイルを取得`](#ファイルを取得)を呼び出して変換されたファイルを取得
-        * または、API [Markdownでドキュメントを作成](#Markdownでドキュメントを作成)を呼び出す
-        * または、内部API `importStdMd`を呼び出して変換されたフォルダを直接インポート
-* パラメータ
+* Working directory
+    * Executing the pandoc command will set the working directory to `workspace/temp/convert/pandoc/${dir}`
+    * API [`Put file`](#put-file) can be used to write the file to be converted to this directory first
+    * Then call the API for conversion, and the converted file will also be written to this directory
+    * Finally, call the API [`Get file`](#get-file) to get the converted file
+        * Or call the API [Create a document with Markdown](#Create-a-document-with-Markdown)
+        * Or call the internal API `importStdMd` to import the converted folder directly
+* Parameters
 
   ```json
   {
@@ -1384,8 +1391,8 @@
   }
   ```
 
-    * `args`: Pandocコマンドラインパラメータ
-* 戻り値
+    * `args`: Pandoc command line parameters
+* Return value
 
   ```json
   {
@@ -1396,14 +1403,14 @@
     }
   }
   ```
-    * `path`: ワークスペース配下のパス
+    * `path`: the path under the workspace
 
-## 通知
+## Notification
 
-### メッセージをプッシュ
+### Push message
 
 * `/api/notification/pushMsg`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1411,8 +1418,9 @@
     "timeout": 7000
   }
   ```
-    * `timeout`: メッセージ表示時間（ミリ秒）。このフィールドは省略可能、デフォルトは7000ミリ秒
-* 戻り値
+    * `timeout`: The duration of the message display in milliseconds. This field can be omitted, the default is 7000
+      milliseconds
+* Return value
 
   ```json
   {
@@ -1423,12 +1431,12 @@
     }
   }
   ```
-    * `id`: メッセージID
+    * `id`: Message ID
 
-### エラーメッセージをプッシュ
+### Push error message
 
 * `/api/notification/pushErrMsg`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1436,8 +1444,9 @@
     "timeout": 7000
   }
   ```
-    * `timeout`: メッセージ表示時間（ミリ秒）。このフィールドは省略可能、デフォルトは7000ミリ秒
-* 戻り値
+    * `timeout`: The duration of the message display in milliseconds. This field can be omitted, the default is 7000
+      milliseconds
+* Return value
 
   ```json
   {
@@ -1448,14 +1457,14 @@
     }
   }
   ```
-    * `id`: メッセージID
+    * `id`: Message ID
 
-## ネットワーク
+## Network
 
-### フォワードプロキシ
+### Forward proxy
 
 * `/api/network/forwardProxy`
-* パラメータ
+* Parameters
 
   ```json
   {
@@ -1474,13 +1483,13 @@
   }
   ```
 
-    * `url`: 転送するURL
-    * `method`: HTTPメソッド、デフォルトは`POST`
-    * `timeout`: タイムアウト（ミリ秒）、デフォルトは`7000`
-    * `contentType`: Content-Type、デフォルトは`application/json`
-    * `headers`: HTTPヘッダー
-    * `payload`: HTTPペイロード、オブジェクトまたは文字列
-    * `payloadEncoding`: `payload`で使用されるエンコーディングスキーム、デフォルトは`text`、選択可能な値は以下の通り
+    * `url`: URL to forward
+    * `method`: HTTP method, default is `POST`
+    * `timeout`: timeout in milliseconds, default is `7000`
+    * `contentType`: Content-Type, default is `application/json`
+    * `headers`: HTTP headers
+    * `payload`: HTTP payload, object or string
+    * `payloadEncoding`: The encoding scheme used by `pyaload`, default is `text`, optional values are as follows
 
         * `text`
         * `base64` | `base64-std`
@@ -1488,7 +1497,8 @@
         * `base32` | `base32-std`
         * `base32-hex`
         * `hex`
-    * `responseEncoding`: レスポンスデータの`body`で使用されるエンコーディングスキーム、デフォルトは`text`、選択可能な値は以下の通り
+    * `responseEncoding`: The encoding scheme used by `body` in response data, default is `text`, optional values are as
+      follows
 
         * `text`
         * `base64` | `base64-std`
@@ -1496,7 +1506,7 @@
         * `base32` | `base32-std`
         * `base32-hex`
         * `hex`
-* 戻り値
+* Return value
 
   ```json
   {
@@ -1515,7 +1525,8 @@
   }
   ```
 
-    * `bodyEncoding`: `body`で使用されるエンコーディングスキーム、リクエストの`responseEncoding`フィールドと一致、デフォルトは`text`、選択可能な値は以下の通り
+    * `bodyEncoding`: The encoding scheme used by `body`, is consistent with field `responseEncoding` in request,
+      default is `text`, optional values are as follows
 
         * `text`
         * `base64` | `base64-std`
@@ -1524,13 +1535,13 @@
         * `base32-hex`
         * `hex`
 
-## システム
+## System
 
-### 起動進捗を取得
+### Get boot progress
 
 * `/api/system/bootProgress`
-* パラメータなし
-* 戻り値
+* No parameters
+* Return value
 
   ```json
   {
@@ -1543,11 +1554,11 @@
   }
   ```
 
-### システムバージョンを取得
+### Get system version
 
 * `/api/system/version`
-* パラメータなし
-* 戻り値
+* No parameters
+* Return value
 
   ```json
   {
@@ -1557,11 +1568,11 @@
   }
   ```
 
-### システムの現在時刻を取得
+### Get the current time of the system
 
 * `/api/system/currentTime`
-* パラメータなし
-* 戻り値
+* No parameters
+* Return value
 
   ```json
   {
@@ -1571,4 +1582,4 @@
   }
   ```
 
-    * `data`: ミリ秒精度
+    * `data`: Precision in milliseconds

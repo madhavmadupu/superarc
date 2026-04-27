@@ -1,45 +1,45 @@
-[English](CONTRIBUTING.md)
-| **中文**
+**English**
+| [中文](CONTRIBUTING_zh_CN.md)
 
-## 获取源码
+## Get the source code
 
 * `git clone git@github.com:siyuan-note/siyuan.git`
-* 切换到 dev 分支 `git checkout dev`
+* Switch to dev branch `git checkout dev`
 
-## NPM 依赖
+## NPM dependencies
 
-安装 pnpm：`npm install -g pnpm@10.33.0`
+Install pnpm: `npm install -g pnpm@10.33.0`
 
 <details>
-<summary>适用于中国大陆</summary>
+<summary>For China mainland</summary>
 
-设置 Electron 镜像环境变量并安装 Electron：
+Set the Electron mirror environment variable and install Electron:
 
-* macOS/Linux：`ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ pnpm install electron@40.9.1 -D`
-* Windows：
+* macOS/Linux: `ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ pnpm install electron@40.9.1 -D`
+* Windows:
   * `SET ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/`
   * `pnpm install electron@40.9.1 -D`
 
-NPM 镜像：
+NPM mirror:
 
-* 使用 npmmirror 中国镜像仓库 `pnpm --registry https://registry.npmmirror.com/ i`
-* 恢复使用官方仓库 `pnpm --registry https://registry.npmjs.org i`
+* Use npmmirror China mirror repository `pnpm --registry https://registry.npmmirror.com/ i`
+* Revert to using official repository `pnpm --registry https://registry.npmjs.org i`
 </details>
 
-进入 app 文件夹执行：
+Enter the app folder and execute:
 
 * `pnpm install electron@40.9.1 -D`
 * `pnpm run dev`
 * `pnpm run start`
 
-注意：在开发环境下不会自动拉起内核进程，需要先手动拉起内核进程。
+Note: In the development environment, the kernel process will not be automatically started, and you need to manually start the kernel process first.
 
-## 内核
+## Kernel
 
-1. 安装最新版 [golang](https://go.dev/)
-2. 打开 CGO 支持，即配置环境变量 `CGO_ENABLED=1`
+1. Install the latest version of [golang](https://go.dev/)
+2. Open CGO support, that is, configure the environment variable `CGO_ENABLED=1`
 
-### 桌面端
+### Desktop
 
 * `cd kernel`
 * Windows: `go build -tags "fts5" -o "../app/kernel/SiYuan-Kernel.exe"`
@@ -63,21 +63,21 @@ NPM 镜像：
 
 ### Harmony
 
-仅支持在 Linux 下编译，需要安装鸿蒙 SDK，并且需要修改 Go 源码。
+Only support compilation under Linux, need to install Harmony SDK, and need to modify Go source code.
 
 * `cd kernel/harmony`
-* `./build.sh` （Windows 模拟器使用 `./build-win.sh`）
+* `./build.sh` (`./build-win.sh` for Windows Emulator)
 * https://github.com/siyuan-note/siyuan-harmony
 
-修改 Go 源码：
+Modify Go source code:
 
-1. go/src/runtime/tls_arm64.s
+1. go/src/runtime/vim tls_arm64.s
 
-   结尾 `DATA runtime·tls_g+0(SB)/8, $16` 改为 `DATA runtime·tls_g+0(SB)/8, $-144`
+   Change the ending `DATA runtime·tls_g+0(SB)/8, $16` to `DATA runtime·tls_g+0(SB)/8, $-144`
 
 2. go/src/runtime/cgo/gcc_android.c
 
-   清空 inittls 函数
+   Clear the inittls function
 
    ```c
    inittls(void **tlsg, void **tlsbase)
@@ -86,6 +86,6 @@ NPM 镜像：
    }
    ```
 3. go/src/net/cgo_resold.go
-   `C.size_t(len(b))` 改为 `C.socklen_t(len(b))`
+   `C.size_t(len(b))` to `C.socklen_t(len(b))`
 
-其他细节请参考 https://github.com/siyuan-note/siyuan/issues/13184
+For other details, please refer to https://github.com/siyuan-note/siyuan/issues/13184
